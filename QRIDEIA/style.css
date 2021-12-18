@@ -1,0 +1,237 @@
+/*********RESET HTML**********/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/**********HEADER*********/
+
+body {
+    background-color: rgba(247, 242, 242, 0.863);
+    width: 100%; /*deixar responsivo*/
+    height: 80vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+
+}
+
+header {
+    background-color: rgb(255, 145, 0);
+    height: 200px;
+    width: 100%;
+    position: absolute;
+}
+
+nav {
+    background: white;
+    padding-top: 40px;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 60px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.logo img {
+    max-width:140px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+ul li {
+    margin-left: 20px;
+}
+
+ul a {
+    text-decoration: none;
+    color: gray;
+}
+
+ul a:hover {
+    color: rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(255, 145, 0);
+    padding-bottom: 5px;
+}
+
+.user {
+    display: flex;
+    margin-left: 5px;
+}
+
+.user img {
+max-width: 30px;
+}
+
+.userLog {
+    margin-left: 10px;
+}
+
+.user a {
+color: rgb(255, 145, 0);
+}
+
+
+/**********SECTION**********/
+
+section {
+    padding-top: 150px;
+    padding-bottom: 100px;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#container {
+    background-color: white;
+    position: relative;
+    text-align: center;
+    height: 250px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px
+}
+
+.cards p{
+    text-align:center;
+    padding-top: 30px;
+}
+.eventCard {
+    border-radius: 5px;
+    padding-top: 40px;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    width: 130px;
+    height: 100px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 255, 255)), to(rgb(218, 209, 209)));
+    background: -moz-linear-gradient(top, rgb(255, 255, 255), rgb(218, 209, 209));
+
+
+}
+.userCard {
+    border-radius: 5px;
+    padding-top: 40px;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    width: 130px;
+    height: 100px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 255, 255)), to(rgb(218, 209, 209)));
+    background: -moz-linear-gradient(top, rgb(255, 255, 255), rgb(218, 209, 209));
+}
+.reportCard {
+    border-radius: 5px;
+    padding-top: 40px;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    width: 130px;
+    height: 100px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 255, 255)), to(rgb(218, 209, 209)));
+    background: -moz-linear-gradient(top, rgb(255, 255, 255), rgb(218, 209, 209));
+}
+
+.cards img {
+    max-width: 50px;
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+
+/**********FOOTER***********/
+
+
+footer {
+    background-color: black;
+    color: rgba(219, 213, 213, 0.76);
+    text-align: center;
+    height: 100px;
+}
+
+footer h6 {
+    padding-top: 10px;
+}
+
+footer a {
+    color: rgb(255, 145, 0);
+    text-decoration: none;
+}
+
+
+/******responsive*****/
+
+button {
+    background-color:transparent;
+    border: none;
+    padding-top: 3px;
+    right: 20px;
+    position: absolute;
+    display: none
+}
+button:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+button:focus ~ ul {
+    transform: translateX(0%);
+          transition: transform 0.3s ease-in;
+}
+
+@media (max-width:550px) {
+    ul {
+        flex-direction: column;
+        position: absolute;
+        align-items:center;
+          top: 11vh;
+          right: 0;
+          width: 30vh;
+          height: 92vh; 
+          background: #23232e; 
+          transform: translateX(100%);
+          transition: transform 0.3s ease-in;
+          justify-content: space-around;      
+    }
+    
+    button {
+        display: flex;
+    }
+    
+}
+
+/*****DARK_MODE******/
+
+#dark-mode {
+    padding-left: 5px;
+    padding-top: 0;
+}
+
+html[dark] {
+    background-color: rgb(131, 125, 125);
+}
+    
+html[dark] .button {
+    color: rgb(245, 235, 235);
+}
+
+    html[dark] #container {
+    background-color: rgb(138, 80, 80);
+}
+
+    html[dark] nav {
+    background: rgb(131, 125, 125);
+}
+    html[dark]  a {
+    color: white;
+}
+    html[dark] .wellcome {
+    color: white;
+}
